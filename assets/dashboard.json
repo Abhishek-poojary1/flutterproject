@@ -1,0 +1,74 @@
+{
+  "type": "container",
+  "args": {
+    "padding": "16.0",
+    "child": {
+      "type": "column",
+      "args": {
+        "crossAxisAlignment": "stretch",
+        "children": [
+          {
+            "type": "card",
+            "args": {
+              "elevation": 4,
+              "child": {
+                "type": "padding",
+                "args": {
+                  "padding": "16.0",
+                  "child": {
+                    "type": "column",
+                    "args": {
+                      "crossAxisAlignment": "start",
+                      "children": [
+                        {
+                          "type": "text",
+                          "args": {
+                            "text": "Welcome to your Dashboard!",
+                            "style": { "fontSize": 20, "fontWeight": "bold", "color": "#4285F4" }
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "args": {
+                            "text": "Your profile is complete.",
+                            "style": { "fontSize": 16, "color": "#666666" }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "padding",
+            "args": {
+              "padding": "16.0",
+              "child": {
+                "type": "row",
+                "args": {
+                  "mainAxisAlignment": "spaceEvenly",
+                  "children": [
+                    {
+                      "type": "elevatedButton",
+                      "args": {
+                        "text": "View Profile"
+                      }
+                    },
+                    {
+                      "type": "elevatedButton",
+                      "args": {
+                        "text": "Settings"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

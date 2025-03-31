@@ -1,0 +1,371 @@
+{
+  "type": "container",
+  "args": {
+    "decoration": {
+      "gradient": {
+        "begin": "topLeft",
+        "end": "bottomRight",
+        "colors": ["#F9F9F9", "#E0F2FF"]
+      }
+    },
+    "child": {
+      "type": "column",
+      "args": {
+        "mainAxisAlignment": "center",
+        "children": [
+          {
+            "type": "container",
+            "args": {
+              "margin": { "bottom": 40.0, "top": 20.0 },
+              "child": {
+                "type": "column",
+                "args": {
+                  "children": [
+                    {
+                      "type": "text",
+                      "args": {
+                        "text": "Welcome Back",
+                        "style": {
+                          "fontSize": 32.0,
+                          "fontWeight": "bold",
+                          "color": "#1E3A8A"
+                        }
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "args": {
+                        "text": "We're so excited to see you again!",
+                        "style": {
+                          "fontSize": 16.0,
+                          "color": "#64748B",
+                          "fontWeight": "medium"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "card",
+            "args": {
+              "elevation": 2.0,
+              "shape": {
+                "borderRadius": 12.0
+              },
+              "child": {
+                "type": "container",
+                "args": {
+                  "padding": 24.0,
+                  "width": 350.0,
+                  "child": {
+                    "type": "column",
+                    "args": {
+                      "crossAxisAlignment": "stretch",
+                      "children": [
+                        {
+                          "type": "textField",
+                          "args": {
+                            "labelText": "Email",
+                            "hintText": "Enter your email",
+                            "controllerName": "email",
+                            "keyboardType": "emailAddress",
+                            "prefixIcon": "email",
+                            "decoration": {
+                              "filled": true,
+                              "fillColor": "#F1F5F9",
+                              "borderRadius": 8.0
+                            }
+                          }
+                        },
+                        {
+                          "type": "padding",
+                          "args": {
+                            "padding": { "top": 16.0, "bottom": 24.0 },
+                            "child": {
+                              "type": "textField",
+                              "args": {
+                                "labelText": "Password",
+                                "hintText": "Enter your password",
+                                "obscureText": true,
+                                "controllerName": "password",
+                                "prefixIcon": "lock",
+                                "decoration": {
+                                  "filled": true,
+                                  "fillColor": "#F1F5F9",
+                                  "borderRadius": 8.0
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "container",
+                          "args": {
+                            "margin": { "bottom": 20.0 },
+                            "child": {
+                              "type": "elevatedButton",
+                              "args": {
+                                "text": "Login",
+                                "style": {
+                                  "backgroundColor": "#3B82F6",
+                                  "textColor": "#FFFFFF",
+                                  "elevation": 0,
+                                  "borderRadius": 8.0,
+                                  "padding": { "vertical": 12.0 }
+                                },
+                                "action": {
+                                  "type": "login",
+                                  "method": "email"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "padding",
+            "args": {
+              "padding": { "top": 24.0, "bottom": 8.0 },
+              "child": {
+                "type": "row",
+                "args": {
+                  "mainAxisAlignment": "center",
+                  "children": [
+                    {
+                      "type": "container",
+                      "args": {
+                        "height": 1.0,
+                        "width": 80.0,
+                        "color": "#CBD5E1"
+                      }
+                    },
+                    {
+                      "type": "padding",
+                      "args": {
+                        "padding": { "horizontal": 16.0 },
+                        "child": {
+                          "type": "text",
+                          "args": {
+                            "text": "Or continue with",
+                            "style": {
+                              "fontSize": 14.0,
+                              "color": "#64748B",
+                              "fontWeight": "medium"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "container",
+                      "args": {
+                        "height": 1.0,
+                        "width": 80.0,
+                        "color": "#CBD5E1"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "padding",
+            "args": {
+              "padding": { "top": 16.0, "bottom": 24.0 },
+              "child": {
+                "type": "row",
+                "args": {
+                  "mainAxisAlignment": "center",
+                  "children": [
+                    {
+                      "type": "container",
+                      "args": {
+                        "margin": { "horizontal": 8.0 },
+                        "child": {
+                          "type": "elevatedButton",
+                          "args": {
+                            "icon": "google",
+                            "backgroundColor": "#FFFFFF",
+                            "iconColor": "#DB4437",
+                            "borderColor": "#E2E8F0",
+                            "size": 48.0,
+                            "action": {
+                              "type": "login",
+                              "method": "google"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "container",
+                      "args": {
+                        "margin": { "horizontal": 8.0 },
+                        "child": {
+                          "type": "elevatedButton",
+                          "args": {
+                            "icon": "apple",
+                            "backgroundColor": "#FFFFFF",
+                            "iconColor": "#000000",
+                            "borderColor": "#E2E8F0",
+                            "size": 48.0,
+                            "action": {
+                              "type": "login",
+                              "method": "apple"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "type": "container",
+                      "args": {
+                        "margin": { "horizontal": 8.0 },
+                        "child": {
+                          "type": "elevatedButton",
+                          "args": {
+                            "icon": "phone",
+                            "backgroundColor": "#FFFFFF",
+                            "iconColor": "#3B82F6",
+                            "borderColor": "#E2E8F0",
+                            "size": 48.0,
+                            "action": {
+                              "type": "login",
+                              "method": "phone"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "card",
+            "args": {
+              "elevation": 2.0,
+              "shape": {
+                "borderRadius": 12.0
+              },
+              "child": {
+                "type": "container",
+                "args": {
+                  "padding": 24.0,
+                  "width": 350.0,
+                  "child": {
+                    "type": "column",
+                    "args": {
+                      "crossAxisAlignment": "stretch",
+                      "children": [
+                        {
+                          "type": "text",
+                          "args": {
+                            "text": "Phone Login",
+                            "style": {
+                              "fontSize": 18.0,
+                              "fontWeight": "bold",
+                              "color": "#1E3A8A"
+                            }
+                          }
+                        },
+                        {
+                          "type": "padding",
+                          "args": {
+                            "padding": { "top": 12.0, "bottom": 20.0 },
+                            "child": {
+                              "type": "textField",
+                              "args": {
+                                "labelText": "Phone Number",
+                                "hintText": "Enter your phone number",
+                                "keyboardType": "phone",
+                                "controllerName": "phone",
+                                "prefixIcon": "phone",
+                                "decoration": {
+                                  "filled": true,
+                                  "fillColor": "#F1F5F9",
+                                  "borderRadius": 8.0
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "elevatedButton",
+                          "args": {
+                            "text": "Send Verification Code",
+                            "style": {
+                              "backgroundColor": "#3B82F6",
+                              "textColor": "#FFFFFF",
+                              "elevation": 0,
+                              "borderRadius": 8.0,
+                              "padding": { "vertical": 12.0 }
+                            },
+                            "action": {
+                              "type": "login",
+                              "method": "phone"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "type": "padding",
+            "args": {
+              "padding": { "top": 24.0 },
+              "child": {
+                "type": "row",
+                "args": {
+                  "mainAxisAlignment": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "args": {
+                        "text": "Don't have an account?",
+                        "style": {
+                          "color": "#64748B",
+                          "fontSize": 14.0
+                        }
+                      }
+                    },
+                    {
+                      "type": "textButton",
+                      "args": {
+                        "text": "Sign up",
+                        "style": {
+                          "color": "#3B82F6",
+                          "fontWeight": "bold",
+                          "fontSize": 14.0
+                        },
+                        "action": {
+                          "type": "navigate",
+                          "route": "signup"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "menu": [
+      { "title": "Home", "icon": "home", "screen": "/dashboard" },
+      { "title": "Profile", "icon": "person", "screen": "/profile" },
+      { "title": "Settings", "icon": "settings", "screen": "/settings" }
+    ]
+  }
+  

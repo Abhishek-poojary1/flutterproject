@@ -1,0 +1,461 @@
+{
+  "type": "container",
+  "args": {
+    "decoration": {
+      "image": {
+        "url": "https://images.unsplash.com/photo-1557682250-33bd709cbe85",
+        "fit": "cover",
+        "colorFilter": {
+          "color": "#000000",
+          "opacity": 0.5
+        }
+      }
+    },
+    "child": {
+      "type": "container",
+      "args": {
+        "padding": 24.0,
+        "child": {
+          "type": "column",
+          "args": {
+            "mainAxisAlignment": "center",
+            "crossAxisAlignment": "center",
+            "children": [
+              {
+                "type": "container",
+                "args": {
+                  "margin": {
+                    "bottom": 40.0
+                  },
+                  "child": {
+                    "type": "column",
+                    "args": {
+                      "mainAxisSize": "min",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "args": {
+                            "icon": "lock_shield",
+                            "size": 70.0,
+                            "color": "#FFFFFF"
+                          }
+                        },
+                        {
+                          "type": "padding",
+                          "args": {
+                            "padding": {
+                              "top": 16.0,
+                              "bottom": 8.0
+                            },
+                            "child": {
+                              "type": "text",
+                              "args": {
+                                "text": "Join SecureApp",
+                                "style": {
+                                  "fontSize": 36.0,
+                                  "fontWeight": "bold",
+                                  "color": "#FFFFFF",
+                                  "letterSpacing": 1.2
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "text",
+                          "args": {
+                            "text": "Create your account to get started",
+                            "style": {
+                              "fontSize": 16.0,
+                              "fontWeight": "normal",
+                              "color": "#FFFFFFCC"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "type": "container",
+                "args": {
+                  "width": 380.0,
+                  "decoration": {
+                    "color": "#FFFFFF10",
+                    "borderRadius": 24.0,
+                    "boxShadow": [
+                      {
+                        "color": "#00000080",
+                        "blurRadius": 20.0,
+                        "spreadRadius": 1.0
+                      }
+                    ],
+                    "border": {
+                      "color": "#FFFFFF30",
+                      "width": 1.0
+                    }
+                  },
+                  "child": {
+                    "type": "backdropFilter",
+                    "args": {
+                      "filter": {
+                        "blur": 10.0
+                      },
+                      "child": {
+                        "type": "container",
+                        "args": {
+                          "padding": 32.0,
+                          "child": {
+                            "type": "column",
+                            "args": {
+                              "crossAxisAlignment": "stretch",
+                              "children": [
+                                {
+                                  "type": "textField",
+                                  "args": {
+                                    "labelText": "Full Name",
+                                    "hintText": "Enter your full name",
+                                    "controllerName": "name",
+                                    "prefixIcon": "person",
+                                    "filled": true,
+                                    "fillColor": "#FFFFFF20",
+                                    "labelStyle": {
+                                      "color": "#FFFFFF"
+                                    },
+                                    "textStyle": {
+                                      "color": "#FFFFFF"
+                                    },
+                                    "hintStyle": {
+                                      "color": "#FFFFFF80"
+                                    },
+                                    "border": {
+                                      "type": "underline",
+                                      "borderColor": "#FFFFFF60"
+                                    },
+                                    "cursorColor": "#FFFFFF"
+                                  }
+                                },
+                                {
+                                  "type": "padding",
+                                  "args": {
+                                    "padding": {
+                                      "top": 24.0,
+                                      "bottom": 24.0
+                                    },
+                                    "child": {
+                                      "type": "textField",
+                                      "args": {
+                                        "labelText": "Email",
+                                        "hintText": "Enter your email",
+                                        "controllerName": "email",
+                                        "keyboardType": "emailAddress",
+                                        "prefixIcon": "email",
+                                        "filled": true,
+                                        "fillColor": "#FFFFFF20",
+                                        "labelStyle": {
+                                          "color": "#FFFFFF"
+                                        },
+                                        "textStyle": {
+                                          "color": "#FFFFFF"
+                                        },
+                                        "hintStyle": {
+                                          "color": "#FFFFFF80"
+                                        },
+                                        "border": {
+                                          "type": "underline",
+                                          "borderColor": "#FFFFFF60"
+                                        },
+                                        "cursorColor": "#FFFFFF"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "type": "padding",
+                                  "args": {
+                                    "padding": {
+                                      "bottom": 24.0
+                                    },
+                                    "child": {
+                                      "type": "textField",
+                                      "args": {
+                                        "labelText": "Password",
+                                        "hintText": "Create a strong password",
+                                        "obscureText": true,
+                                        "controllerName": "password",
+                                        "prefixIcon": "lock",
+                                        "suffixIcon": "visibility",
+                                        "filled": true,
+                                        "fillColor": "#FFFFFF20",
+                                        "labelStyle": {
+                                          "color": "#FFFFFF"
+                                        },
+                                        "textStyle": {
+                                          "color": "#FFFFFF"
+                                        },
+                                        "hintStyle": {
+                                          "color": "#FFFFFF80"
+                                        },
+                                        "border": {
+                                          "type": "underline",
+                                          "borderColor": "#FFFFFF60"
+                                        },
+                                        "cursorColor": "#FFFFFF"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "type": "padding",
+                                  "args": {
+                                    "padding": {
+                                      "bottom": 32.0
+                                    },
+                                    "child": {
+                                      "type": "textField",
+                                      "args": {
+                                        "labelText": "Confirm Password",
+                                        "hintText": "Confirm your password",
+                                        "obscureText": true,
+                                        "controllerName": "confirmPassword",
+                                        "prefixIcon": "lock_check",
+                                        "filled": true,
+                                        "fillColor": "#FFFFFF20",
+                                        "labelStyle": {
+                                          "color": "#FFFFFF"
+                                        },
+                                        "textStyle": {
+                                          "color": "#FFFFFF"
+                                        },
+                                        "hintStyle": {
+                                          "color": "#FFFFFF80"
+                                        },
+                                        "border": {
+                                          "type": "underline",
+                                          "borderColor": "#FFFFFF60"
+                                        },
+                                        "cursorColor": "#FFFFFF"
+                                      }
+                                    }
+                                  }
+                                },
+                                {
+                                  "type": "container",
+                                  "args": {
+                                    "height": 60.0,
+                                    "child": {
+                                      "type": "elevatedButton",
+                                      "args": {
+                                        "text": "CREATE ACCOUNT",
+                                        "textStyle": {
+                                          "fontSize": 16.0,
+                                          "fontWeight": "bold",
+                                          "letterSpacing": 1.5,
+                                          "color": "#000000"
+                                        },
+                                        "style": {
+                                          "backgroundColor": "#FFFFFF",
+                                          "foregroundColor": "#000000",
+                                          "elevation": 4.0,
+                                          "shape": {
+                                            "type": "rounded",
+                                            "borderRadius": 30.0
+                                          }
+                                        },
+                                        "action": {
+                                          "type": "signup",
+                                          "method": "email"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                "type": "padding",
+                "args": {
+                  "padding": {
+                    "top": 36.0,
+                    "bottom": 24.0
+                  },
+                  "child": {
+                    "type": "row",
+                    "args": {
+                      "mainAxisAlignment": "center",
+                      "children": [
+                        {
+                          "type": "container",
+                          "args": {
+                            "width": 80.0,
+                            "height": 1.0,
+                            "decoration": {
+                              "color": "#FFFFFF40"
+                            }
+                          }
+                        },
+                        {
+                          "type": "padding",
+                          "args": {
+                            "padding": {
+                              "left": 16.0,
+                              "right": 16.0
+                            },
+                            "child": {
+                              "type": "text",
+                              "args": {
+                                "text": "OR CONTINUE WITH",
+                                "style": {
+                                  "fontSize": 12.0,
+                                  "fontWeight": "bold",
+                                  "letterSpacing": 1.0,
+                                  "color": "#FFFFFFB0"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "container",
+                          "args": {
+                            "width": 80.0,
+                            "height": 1.0,
+                            "decoration": {
+                              "color": "#FFFFFF40"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "type": "padding",
+                "args": {
+                  "padding": {
+                    "bottom": 36.0
+                  },
+                  "child": {
+                    "type": "row",
+                    "args": {
+                      "mainAxisAlignment": "center",
+                      "children": [
+                        {
+                          "type": "container",
+                          "args": {
+                            "width": 64.0,
+                            "height": 64.0,
+                            "margin": {
+                              "right": 20.0
+                            },
+                            "decoration": {
+                              "color": "#FFFFFF15",
+                              "shape": "circle",
+                              "border": {
+                                "color": "#FFFFFF30",
+                                "width": 1.0
+                              }
+                            },
+                            "child": {
+                              "type": "iconButton",
+                              "args": {
+                                "icon": "google",
+                                "size": 28.0,
+                                "iconColor": "#FFFFFF",
+                                "action": {
+                                  "type": "signup",
+                                  "method": "google"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "type": "container",
+                          "args": {
+                            "width": 64.0,
+                            "height": 64.0,
+                            "decoration": {
+                              "color": "#FFFFFF15",
+                              "shape": "circle",
+                              "border": {
+                                "color": "#FFFFFF30",
+                                "width": 1.0
+                              }
+                            },
+                            "child": {
+                              "type": "iconButton",
+                              "args": {
+                                "icon": "phone",
+                                "size": 28.0,
+                                "iconColor": "#FFFFFF",
+                                "action": {
+                                  "type": "signup",
+                                  "method": "phone"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              {
+                "type": "row",
+                "args": {
+                  "mainAxisAlignment": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "args": {
+                        "text": "Already have an account?",
+                        "style": {
+                          "fontSize": 14.0,
+                          "color": "#FFFFFFB0"
+                        }
+                      }
+                    },
+                    {
+                      "type": "padding",
+                      "args": {
+                        "padding": {
+                          "left": 8.0
+                        },
+                        "child": {
+                          "type": "textButton",
+                          "args": {
+                            "text": "Log in",
+                            "textStyle": {
+                              "fontSize": 14.0,
+                              "fontWeight": "bold",
+                              "color": "#FFFFFF"
+                            },
+                            "action": {
+                              "type": "navigate",
+                              "route": "login"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

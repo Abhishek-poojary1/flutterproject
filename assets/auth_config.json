@@ -1,0 +1,8 @@
+{
+    "enabledAuthMethods": {
+      "email": true,
+      "google": true,
+      "apple": true,
+      "phone": true
+    }
+  }

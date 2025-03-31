@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Welcome to Our App",
+    "description": "Discover a seamless experience with our feature-rich application.",
+    "image": "assets/logo.png"
+  },
+  {
+    "title": "Multiple Login Options",
+    "description": "Sign in easily with email, phone number, or social accounts.",
+    "image": "assets/images/Screenshot_20250331_114156.png"
+  },
+  {
+    "title": "Secure Authentication",
+    "description": "Your data is protected with Firebase Authentication.",
+    "image": "assets/images/dm_20240321-how-to-secure-a-network.webp"
+  },
+  {
+    "title": "Personalized Dashboard",
+    "description": "Access all your information in one beautiful dashboard.",
+    "image": "assets/images/Screenshot_20250331_114526.png"
+  },
+  {
+    "title": "Get Started Now",
+    "description": "Create an account or log in to begin your journey.",
+    "image": "assets/images/360_F_144798070_kxtRysqmNmLwmu9WAZg7sclsihV2sdLT.jpg"
+  }
+]
